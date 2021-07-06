@@ -1,0 +1,45 @@
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+<script>
+   myAudio = new Audio('mainscreen/assets/bg.mp3'); 
+if (typeof myAudio.loop == 'boolean')
+{
+    myAudio.loop = true;
+}
+else
+{
+    myAudio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
+</script>
+<body>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<p class="font" align="center" style="font-size:99px;">GAME OVER</p>
+<p class="font" align="center" style="font-size:35px;">A Shooting Game</p>
+<div align="center">
+<a href="mainscreen/index.html">
+<button class="font button">Are you ready</button>
+</a>
+</div>
+<div width="200" height="200" class="profile-row">
+      <div class="dp">
+        <div class="dp-arc-outer"></div>
+        <div class="dp-arc-inner"></div>
+        <img src="earth.png">
+      </div>
+</body>
+</html>

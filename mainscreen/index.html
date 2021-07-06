@@ -1,0 +1,110 @@
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="enemy.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<script>
+   myAudio = new Audio('assets/bg.mp3'); 
+if (typeof myAudio.loop == 'boolean')
+{
+    myAudio.loop = true;
+}
+else
+{
+    myAudio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
+myAudio.play();
+   function play() {   
+        var beepsound = new Audio('assets/bum.mp3');   
+        beepsound.play();   
+    }; 
+</script>
+<body>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+
+
+
+ <div class="wrapper">
+  <div class="timer">
+       <span></span>    
+  </div>
+  <div class="gameover" id="font">GAME OVER<br><button class="button" onclick="location.reload()" id="font">restart</button></div>
+  <input class="input-circle input-circle1" type="radio" id="circle1" onclick="play()">
+ <input class="input-circle input-circle2" type="radio" id="circle2" onclick="play()">
+ <input class="input-circle input-circle3" type="radio" id="circle3" onclick="play()">
+ <input class="input-circle input-circle4" type="radio" id="circle4" onclick="play()">
+ <input class="input-circle input-circle5" type="radio" id="circle5" onclick="play()">
+ <input class="input-circle input-circle6" type="radio" id="circle6" onclick="play()">
+  
+  <label for="circle1" class="pajaro pajaro1"><span></span></label>
+  <label for="circle2" class="pajaro pajaro2"><span></span></label>
+  <label for="circle3" class="pajaro pajaro3"><span></span></label>
+  <label for="circle4" class="pajaro pajaro4"><span></span></label>
+  <label for="circle5" class="pajaro pajaro5"><span></span></label>
+  <label for="circle6" class="pajaro pajaro6"><span></span></label>
+  <div class="sum" id="font">SCORE:</div>
+
+<div class='view'>
+  <ul class='circles'>
+    <li class='h1 item'></li>
+    <li class='h2 item'></li>
+    <li class='h3 item'></li>
+    <li class='h4 item'></li>
+    <li class='h5 item'></li>
+    <li class='h6 item'></li>
+    <li class='h7 item'></li>
+  </ul>
+</div>
+</div>
+<div class='vieww'>
+  <ul class='circles'>
+    <li class='h1 item'></li>
+    <li class='h2 item'></li>
+    <li class='h3 item'></li>
+    <li class='h4 item'></li>
+    <li class='h5 item'></li>
+    <li class='h6 item'></li>
+    <li class='h7 item'></li>
+  </ul>
+</div>
+</div>
+<img src="assets/bg.png" id="pointer"></img>
+<div class="Deca">
+  <div class="plane main">
+    <div class="circle"></div>
+
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</div>
+<div class="Decaa">
+  <div class="plane main">
+    <div class="circle"></div>
+
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
