@@ -27,3 +27,12 @@ window.addEventListener('mousemove', rotatePointer);
 window.addEventListener('touchmove', rotatePointer);
 window.addEventListener('touchstart', rotatePointer);
 })
+
+
+var a = document.getElementById("font").innerHTML
+if (a == "SCORE:6") {
+    document.getElementById("font").innerHTML = "You won"
+} else {
+  
+    document.getElementById("font").innerHTML = "Game over"
+}

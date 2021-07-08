@@ -383,6 +383,14 @@ html {
   bottom: 150px;
   perspective: 400;
 }
+.Daa {
+  position: absolute;
+  top: 300;
+  left: 500px;
+  right: 0;
+  bottom: 200px;
+  
+}
 
 .plane {
   width: 120px;
