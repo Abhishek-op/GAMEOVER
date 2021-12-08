@@ -21,7 +21,7 @@ h2{position:fixed; right:20px; bottom:0; font-size:18px; color:red;}
 .input-circle ~ .pajaro{
   opacity:0;
   transition:0.3s  cubic-bezier(0,.43,1,0);
-  animation: move 8s infinite alternate;
+  animation: move 200s infinite alternate;
 }
 .input-circle1:not(:checked) ~ .pajaro1,
 .input-circle2:not(:checked) ~ .pajaro2,
